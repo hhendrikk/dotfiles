@@ -1,0 +1,51 @@
+[user]
+    name = Hendrik A Mourão
+    email = jhendrik@gmail.com
+[core]
+    autocrlf = input 
+    editor = vim -f 
+[merge]
+    tool = kdiff3
+    conflictstyle = diff3
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[alias]
+    ci = commit
+    ck = checkout
+    ckb = checkout -b
+    pullo = pull --ff-only
+    pullr = pull --rebase
+    bc = branch -avv
+    st = status
+    cr = cherry-pick
+    mgnoff = merge --no-ff
+    mgsquash = merge --squash
+    lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit"
+    lg1 = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit" -10
+    lg2 = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit" -20
+    lg5 = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit" -50
+
+[mergetool]
+    keepBackup = false
+[mergetool "kdiff3"]
+    cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
