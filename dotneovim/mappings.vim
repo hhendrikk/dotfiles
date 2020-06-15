@@ -12,8 +12,8 @@ let mapleader = ","
 " }
 
 if !exists('g:vscode')
-" Remap jj do esc {
-  inoremap jj <Esc>
+" Remap fd do esc {
+  inoremap fd <Esc>
   inoremap <Esc> <Nop>
 " }
 endif
