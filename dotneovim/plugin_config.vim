@@ -57,3 +57,8 @@ function! s:denite_my_settings() abort
   \ denite#do_map('toggle_select').'j'
 endfunction
 " }
+
+" VUE {
+  let g:vue_pre_processors = []
+" }
+
