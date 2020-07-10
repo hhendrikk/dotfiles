@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
+Plug 'Chiel92/vim-autoformat'
 
 " ncm2 completion sources
 Plug 'ncm2/ncm2-bufword'
