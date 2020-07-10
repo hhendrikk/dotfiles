@@ -15,6 +15,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'mattn/emmet-vim'
 
 " ncm2 completion sources
 Plug 'ncm2/ncm2-bufword'
