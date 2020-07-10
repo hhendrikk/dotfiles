@@ -62,3 +62,8 @@ endfunction
   let g:vue_pre_processors = []
 " }
 
+" AutoFormat {
+  au BufWrite * :Autoformat
+" }
+
+
