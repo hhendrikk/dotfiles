@@ -13,7 +13,7 @@ The plugins are managed by [VIM-Plug](https://github.com/junegunn/vim-plug).
 
 1. Clone the repo `https://github.com/hhendrikk/dotfiles`
    - windows : `cp dotneovim $HOME/AppData/Local/nvim`
-   - unix: `cp dotneovim ~/.config/nvim`
+   - unix: `cp ./dotneovim/*.* ~/.config/nvim`
 2. `cd ~/.config/nvim` or `$HOME/AppData/Local/nvim`
 3. `md backups swaps undos autoload`
 4. `pip install neovim`
