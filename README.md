@@ -27,3 +27,10 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 5. curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 6. nvim +PlugInstall
 ```
+
+# HyperJS
+
+```
+rm ~/.hyperjs
+ln -s ~/.dotfiles/.hyperjs ~/.hyperjs
+```
