@@ -28,7 +28,7 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 6. nvim +PlugInstall
 ```
 
-# HyperJS
+# hyperjs
 
 ```
 rm ~/.hyperjs
