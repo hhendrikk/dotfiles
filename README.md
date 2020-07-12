@@ -31,6 +31,6 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 # hyperjs
 
 ```
-rm ~/.hyperjs
-ln -s ~/.dotfiles/.hyperjs ~/.hyperjs
+rm ~/.hyper.js
+ln -s ~/.dotfiles/.hyperjs ~/.hyper.js
 ```
