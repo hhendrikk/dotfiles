@@ -32,5 +32,5 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 ```
 rm ~/.hyper.js
-ln -s ~/.dotfiles/.hyperjs ~/.hyper.js
+ln -s ~/.dotfiles/.hyper.js ~/.hyper.js
 ```
