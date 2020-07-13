@@ -70,7 +70,7 @@ ZSH_DISABLE_COMPFIX="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git branch colorize dotnet nvm zsh-z)
+plugins=(git branch colorize dotnet nvm)
 
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
@@ -150,3 +150,4 @@ zinit light-mode for \
 zinit light zdharma/fast-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
+zinit load agkozak/zsh-z
