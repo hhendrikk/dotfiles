@@ -37,6 +37,9 @@ endif
 
 nmap <Tab> :bnext<CR>
 nmap <S-Tab> :bprevious<CR>
-nmap <C-p> :Denite file/rec buffer<CR>
 map <leader><leader> :noh<CR>
 "}
+
+" fzf {
+map <silent> <F2> :Files<CR>
+" }
