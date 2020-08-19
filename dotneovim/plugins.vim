@@ -5,32 +5,22 @@ else
 endif
 
 Plug 'editorconfig/editorconfig-vim'
-" Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'morhetz/gruvbox'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'SirVer/ultisnips'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
-Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'cakebaker/scss-syntax.vim'
 Plug 'posva/vim-vue'
-Plug 'Chiel92/vim-autoformat'
-Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
 Plug 'ap/vim-css-color'
+Plug 'sheerun/vim-polyglot'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" ncm2 completion sources
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-Plug 'phpactor/ncm2-phpactor'
-Plug 'ncm2/ncm2-cssomni'
-Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
-Plug 'ncm2/nvim-typescript', {'do': './install.sh'}
-Plug 'ncm2/ncm2-ultisnips'
-
-" php
-Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 call plug#end()

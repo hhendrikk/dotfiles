@@ -40,6 +40,12 @@ nmap <S-Tab> :bprevious<CR>
 map <leader><leader> :noh<CR>
 "}
 
-" fzf {
-map <silent> <F2> :Files<CR>
+" FZF {
+map <silent> <C-p> :FZF<CR>
+" }
+
+" ALE {
+nmap <silent> [c <Plug>(ale_previous_wrap)
+nmap <silent> ]c <Plug>(ale_next_wrap)
+nmap <F6> <Plug>(ale_fix)
 " }
