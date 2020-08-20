@@ -128,6 +128,7 @@
 
     colorscheme gruvbox                            " Colorscheme
     set background=dark
+    hi Comment cterm=italic
 " }
 
 

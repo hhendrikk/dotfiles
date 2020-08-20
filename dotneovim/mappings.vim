@@ -11,12 +11,10 @@ noremap <Right> <NOP>
 command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
 " }
 
-if !exists('g:vscode')
-  " Remap fd do esc {
-  inoremap fd <Esc>
-  inoremap <Esc> <Nop>
-  " }
-endif
+" Remap fd do esc {
+inoremap fd <Esc>
+inoremap <Esc> <Nop>
+" }
 
 " Neovim :Terminal {
 tmap <Esc> <C-\><C-n>
