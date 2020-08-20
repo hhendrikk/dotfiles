@@ -126,10 +126,8 @@
     
     set autoread                                   " Reload files
 
-if !exists('g:vscode')
-    colorscheme gruvbox                            " Set colorscheme 
+    colorscheme gruvbox                            " Colorscheme
     set background=dark
-endif
 " }
 
 

@@ -5,7 +5,6 @@ else
 endif
 
 Plug 'editorconfig/editorconfig-vim'
-Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
@@ -22,5 +21,6 @@ Plug 'dense-analysis/ale'
 Plug 'ap/vim-css-color'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
 
 call plug#end()
