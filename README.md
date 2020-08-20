@@ -27,6 +27,7 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 4. pip3 install --upgrade neovim
 5. curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 6. nvim +PlugInstall
+7. nvim -c 'CocInstall -sync coc-json coc-html coc-eslint coc-tslint coc-vetur coc-tsserver coc-css coc-emmet|q'
 ```
 
 # hyperjs
