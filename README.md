@@ -7,6 +7,7 @@
 - kdiff3
 - hyperjs
 - zsh
+- ripgrep
 
 ```
 git clone git@github.com:hhendrikk/dotfiles.git ~/.dotfiles
