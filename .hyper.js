@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: 'FiraCode Nerd Font',
+    fontFamily: 'Iosevka',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -24,7 +24,7 @@ module.exports = {
     lineHeight: 1,
 
     // letter spacing as a relative unit
-    letterSpacing: 0,
+    letterSpacing: 1.2,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -33,7 +33,7 @@ module.exports = {
     cursorAccentColor: '#000',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'UNDERLINE',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: false,
@@ -146,7 +146,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-gruvbox', 'hyper-pane', 'hyper-search', 'hyperpower'],
+  plugins: ['hyper-gruvbox-material', 'hyper-pane', 'hyper-search', 'hyperpower'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
