@@ -1,33 +1,33 @@
-if has('win32')
+" if has('win32')
 " Plugins {
-  source ~/AppData/Local/nvim/plugins.vim
+source ~/AppData/Local/nvim/plugins.vim
 " }
 
 " Mappings {
-  source ~/AppData/Local/nvim/mappings.vim
+source ~/AppData/Local/nvim/mappings.vim
 " }
 
 " Plugin configs {
-  source ~/AppData/Local/nvim/plugin_config.vim
+source ~/AppData/Local/nvim/plugin_config.vim
 " }
 
 " Configs {
-   source ~/AppData/Local/nvim/configs.vim
+source ~/AppData/Local/nvim/configs.vim
 " }
-else
+" else
 " Plugins {
-  source ~/.config/nvim/plugins.vim
+"source ~/.config/nvim/plugins.vim
 " }
 
 " Mappings {
-   source ~/.config/nvim/mappings.vim
+"   source ~/.config/nvim/mappings.vim
 " }
 
 " Plugin configs {
-  source ~/.config/nvim/plugin_config.vim
+"  source ~/.config/nvim/plugin_config.vim
 " }
 
 " Configs {
-   source ~/.config/nvim/configs.vim
+"  source ~/.config/nvim/configs.vim
 " }
-endif
+" endif
