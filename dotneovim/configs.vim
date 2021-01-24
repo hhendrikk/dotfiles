@@ -129,11 +129,25 @@
     colorscheme gruvbox                            " Colorscheme
     set background=dark
     hi Comment cterm=italic
+
+    set guifont=Fira\ Code:h10
+
+    if has('termguicolors')
+      set termguicolors
+    endif
+
+    if has('patch-8.1.1880')
+      set completeopt=longest,menuone,popuphidden
+      set completepopup=highlight:Pmenu,border:off
+    else
+      set completeopt=menuone,noinsert,noselect,preview
+      autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+    endif
 " }
 
 
 " Python config {
     if has('win32')
-        let g:python3_host_prog = expand('C:\Python38\python.exe')
+        let g:python3_host_prog = expand('C:\Users\jhend\scoop\apps\python\current\python.exe')
     endif
 " }

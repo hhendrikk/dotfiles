@@ -1,10 +1,13 @@
-[Install Chocolately](https://chocolatey.org/)
 
-### Install packages with chocolatey (mode admin)
+### Requirements
+  - [Install Powershell-Core](https://github.com/PowerShell/PowerShell/releases)
+  - [Install Scoop](https://scoop.sh/)
+
+
+### Install packages with scoop
 ```bash
-choco install powershell-core
-choco install firacode 
-choco install bat
+scoop install FiraCode-NF 
+scoop install bat
 ```
 
 ### Clone repository
