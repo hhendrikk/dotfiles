@@ -13,7 +13,7 @@ scoop install bat
 ### Clone repository
 
 ```bash
-cp powershell $HOME\Documents\PowerShell
+New-Item -ItemType SymbolicLink -Path "$HOME\Documents\PowerShell" -Target "$HOME\.dotfiles\poshfiles"
 ```
 
 ### Enable Execution Scripts PowerShell Local Machine
