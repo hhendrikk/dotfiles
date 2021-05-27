@@ -24,8 +24,8 @@ heuristic = false
 
 [git_branch]
 symbol = "🌱 "
-truncation_length = 4
-truncation_symbol = ""
+truncation_length = 18
+truncation_symbol = "..."
 
 [git_commit]
 commit_hash_length = 4
