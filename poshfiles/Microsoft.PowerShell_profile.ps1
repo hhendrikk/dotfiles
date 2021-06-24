@@ -1,8 +1,5 @@
-Import-Module oh-my-posh
 Import-Module z
 Import-Module Get-ChildItemColor
-
-Set-Theme Avit
 
 $env:LC_ALL='C.UTF-8'
 
@@ -13,3 +10,5 @@ Set-Alias cat bat
 Set-Alias rmf removeAllFiles
 
 function removeAllFiles { rm -Force $args }
+
+Invoke-Expression (&starship init powershell)

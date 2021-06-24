@@ -6,14 +6,17 @@
 
 ### Install packages with scoop
 ```bash
-scoop install FiraCode-NF 
+scoop bucket add nerd-fonts
+sudo scoop install JetBrainsMono-NF-Mono
 scoop install bat
+scoop install starship
 ```
 
 ### Clone repository
 
 ```bash
-New-Item -ItemType SymbolicLink -Path "$HOME\Documents\PowerShell" -Target "$HOME\.dotfiles\poshfiles"
+sudo New-Item -ItemType SymbolicLink -Path "$HOME\Documents\PowerShell" -Target "$HOME\.dotfiles\poshfiles"
+sudo New-Item -ItemType SymbolicLink -Path "$HOME\.config\starship.toml" -Target "$HOME\.dotfiles\starship.toml"
 ```
 
 ### Enable Execution Scripts PowerShell Local Machine
@@ -25,8 +28,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ### Install modules:
 
 ```bash
-Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
 Install-Module z -Scope CurrentUser -AllowClobber
 Install-Module 7Zip4Powershell -Scope CurrentUser
 Install-Module PSUtil -Scope CurrentUser

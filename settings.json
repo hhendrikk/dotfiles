@@ -11,7 +11,7 @@
             "colorScheme" : "Dracula",
             "cursorHeight" : 25,
             "cursorShape" : "vintage",
-            "fontFace" : "FiraCode NF",
+            "fontFace" : "JetBrainsMono NF",
             "fontSize" : 11,
             "historySize" : 9001,
             "icon" : "ms-appdata:///roaming/pwsh-32.png",

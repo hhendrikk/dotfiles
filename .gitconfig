@@ -3,7 +3,7 @@
     email = jhendrik@gmail.com
 [core]
     autocrlf = input 
-    editor = vim -f 
+    editor = code --wait
 [merge]
     tool = kdiff3
     conflictstyle = diff3
