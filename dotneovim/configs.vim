@@ -130,7 +130,7 @@
     set background=dark
     hi Comment cterm=italic
 
-    set guifont=Fira\ Code:h10
+    set guifont=Monoid:h10
 
     if has('termguicolors')
       set termguicolors
