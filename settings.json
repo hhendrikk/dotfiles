@@ -11,12 +11,16 @@
             "keys": "ctrl+shift+c"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
             "command": "find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "unbound",
+            "keys": "win+`"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
         },
         {
             "command": 
@@ -36,11 +40,10 @@
         "defaults": 
         {
             "closeOnExit": "never",
-            "colorScheme": "Dracula",
             "cursorHeight": 25,
             "cursorShape": "vintage",
-            "fontFace": "JetBrainsMono NF",
-            "fontSize": 11,
+            "fontFace": "Monoid",
+            "fontSize": 10,
             "historySize": 9001,
             "icon": "ms-appdata:///roaming/pwsh-32.png",
             "name": "PowerShell",
@@ -51,6 +54,7 @@
         [
             {
                 "commandline": "powershell.exe",
+                "fontFace": "Cascadia Mono",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -72,21 +76,25 @@
                 "backgroundImageAlignment": "center",
                 "backgroundImageOpacity": 0.20000000000000001,
                 "backgroundImageStretchMode": "uniformToFill",
+                "colorScheme": "Dracula",
+                "fontWeight": "medium",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "backgroundImage": "C:/Users/hhendrikk/Pictures/Wallpapers/tron-legacy-yellow.jpg",
+                "backgroundImage": "C:\\Users\\hhendrikk\\Pictures\\wallpapers\\tron-legacy-yellow.jpg",
                 "backgroundImageAlignment": "center",
                 "backgroundImageOpacity": 0.20000000000000001,
-                "backgroundImageStretchMode": "none",
-                "commandline": "wsl.exe ~",
+                "backgroundImageStretchMode": "uniformToFill",
+                "colorScheme": "One Half Dark",
+                "fontWeight": "medium",
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl.localhost\\Ubuntu-20.04\\home\\hhendrikk"
             }
         ]
     },
@@ -345,5 +353,6 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "theme": "dark"
 }
