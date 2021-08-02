@@ -9,7 +9,6 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'joshdick/onedark.vim'
@@ -21,6 +20,9 @@ Plug 'maximbaz/lightline-ale'
 Plug 'alvan/vim-closetag'
 Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 
 Plug 'plasticboy/vim-markdown'
