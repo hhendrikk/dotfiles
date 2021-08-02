@@ -23,6 +23,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'jiangmiao/auto-pairs'
 
 
 Plug 'plasticboy/vim-markdown'
