@@ -33,7 +33,7 @@
                                                    " put a `$` sign at the end of
                                                    " the changed text
 
-    set colorcolumn=80                             " Highlight certain column(s)
+    set colorcolumn=120                            " Highlight certain column(s)
 
     if has('win32')
       set directory=~/AppData/Local/nvim/swaps     " Set directory for swap files
@@ -126,11 +126,11 @@
     
     set autoread                                   " Reload files
 
-    colorscheme gruvbox                            " Colorscheme
+    colorscheme onedark                            " Colorscheme
     set background=dark
     hi Comment cterm=italic
 
-    set guifont=Monoid:h10
+    set guifont=Monoid\ Nerd\ Font\ Mono:h10
 
     if has('termguicolors')
       set termguicolors

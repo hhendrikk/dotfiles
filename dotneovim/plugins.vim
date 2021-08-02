@@ -11,14 +11,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'dense-analysis/ale'
-Plug 'ap/vim-css-color'
 Plug 'sheerun/vim-polyglot'
-Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'sirver/ultisnips'
 Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'maximbaz/lightline-ale'
+Plug 'alvan/vim-closetag'
+Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 

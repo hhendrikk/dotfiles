@@ -1,5 +1,18 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"],
-  "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact", "typescript.tsx"],
-  "coc.preferences.diagnostic.virtualText": true,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.formatOnType": true,
+  "diagnostic.displayByAle": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "html",
+    "css",
+    "scss",
+    "javascript",
+    "typescript",
+    "vue",
+    "go",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "eslint.autoFixOnSave": true
 }

@@ -59,7 +59,7 @@ augroup END
 
 " Lightline {
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'onedark',
       \ 'active': {
       \   'right': [
       \     ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok'],
@@ -98,7 +98,7 @@ let g:vim_markdown_folding_disabled = 1
 " }
 
 " COC {
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-vetur', 'coc-git', 'coc-eslint', 'coc-stylelint']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-vetur', 'coc-git', 'coc-eslint', 'coc-stylelint', 'coc-highlight']
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
