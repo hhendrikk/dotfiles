@@ -97,6 +97,10 @@ let g:lightline#ale#indicator_ok = "\uf00c "
 let g:vim_markdown_folding_disabled = 1
 " }
 
+" COC-EMMET {
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>") 
+" }
+
 " COC {
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-vetur', 'coc-git', 'coc-eslint', 'coc-stylelint', 'coc-highlight', 'coc-go']
 
