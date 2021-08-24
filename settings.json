@@ -8,19 +8,15 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "keys": "ctrl+shift+c"
+            "keys": "ctrl+c"
         },
         {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
         {
-            "command": "unbound",
-            "keys": "win+`"
-        },
-        {
             "command": "paste",
-            "keys": "ctrl+shift+v"
+            "keys": "ctrl+v"
         },
         {
             "command": 
@@ -34,27 +30,14 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     "profiles": 
     {
-        "defaults": 
-        {
-            "closeOnExit": "never",
-            "cursorHeight": 25,
-            "cursorShape": "vintage",
-            "fontFace": "Monoid",
-            "fontSize": 10,
-            "historySize": 9001,
-            "icon": "ms-appdata:///roaming/pwsh-32.png",
-            "name": "PowerShell",
-            "padding": "10, 10, 10, 10",
-            "startingDirectory": "%USERPROFILE%"
-        },
+        "defaults": {},
         "list": 
         [
             {
                 "commandline": "powershell.exe",
-                "fontFace": "Cascadia Mono",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -66,35 +49,34 @@
                 "name": "Command Prompt"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "backgroundImage": "C:/Users/hhendrikk/Pictures/Wallpapers/tron-legacy-blue.png",
-                "backgroundImageAlignment": "center",
-                "backgroundImageOpacity": 0.20000000000000001,
-                "backgroundImageStretchMode": "uniformToFill",
-                "colorScheme": "Dracula",
-                "fontWeight": "medium",
+                "backgroundImage": "C:\\Users\\hendrik.mourao\\Pictures\\Wallpapers\\tron-legacy-blue.png",
+                "backgroundImageOpacity": 0.10000000000000001,
+                "fontFace": "Monoid Nerd Font",
+                "fontSize": 10,
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "backgroundImage": "C:\\Users\\hhendrikk\\Pictures\\wallpapers\\tron-legacy-yellow.jpg",
-                "backgroundImageAlignment": "center",
-                "backgroundImageOpacity": 0.20000000000000001,
-                "backgroundImageStretchMode": "uniformToFill",
-                "colorScheme": "One Half Dark",
-                "fontWeight": "medium",
+                "backgroundImage": "C:\\Users\\hendrik.mourao\\Pictures\\Wallpapers\\tron-legacy-yellow.jpg",
+                "backgroundImageOpacity": 0.10000000000000001,
+                "colorScheme": "Campbell",
+                "commandline": "wsl.exe -d Ubuntu-20.04 -u hhendrikk",
+                "experimental.retroTerminalEffect": false,
+                "fontFace": "Monoid Nerd Font",
+                "fontSize": 10,
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
-                "name": "Ubuntu",
+                "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl.localhost\\Ubuntu-20.04\\home\\hhendrikk"
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\hhendrikk"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
             }
         ]
     },
@@ -145,29 +127,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#C19C00"
-        },
-        {
-            "background": "#282A36",
-            "black": "#21222C",
-            "blue": "#BD93F9",
-            "brightBlack": "#6272A4",
-            "brightBlue": "#D6ACFF",
-            "brightCyan": "#A4FFFF",
-            "brightGreen": "#69FF94",
-            "brightPurple": "#FF92DF",
-            "brightRed": "#FF6E6E",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFFFA5",
-            "cursorColor": "#F8F8F2",
-            "cyan": "#8BE9FD",
-            "foreground": "#F8F8F2",
-            "green": "#50FA7B",
-            "name": "Dracula",
-            "purple": "#FF79C6",
-            "red": "#FF5555",
-            "selectionBackground": "#44475A",
-            "white": "#F8F8F2",
-            "yellow": "#F1FA8C"
         },
         {
             "background": "#282C34",
@@ -308,29 +267,6 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#2D2D2D",
-            "black": "#000000",
-            "blue": "#6699CC",
-            "brightBlack": "#000000",
-            "brightBlue": "#6699CC",
-            "brightCyan": "#66CCCC",
-            "brightGreen": "#99CC99",
-            "brightPurple": "#CC99CC",
-            "brightRed": "#F2777A",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFCC66",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#66CCCC",
-            "foreground": "#CCCCCC",
-            "green": "#99CC99",
-            "name": "Tomorrow Night Eighties",
-            "purple": "#CC99CC",
-            "red": "#F2777A",
-            "selectionBackground": "#FFFFFF",
-            "white": "#FFFFFF",
-            "yellow": "#FFCC66"
-        },
-        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -354,5 +290,5 @@
             "yellow": "#808000"
         }
     ],
-    "theme": "dark"
+    "theme": "light"
 }

@@ -1,54 +1,60 @@
 [user]
-    name = Hendrik A Mourão
-    email = jhendrik@gmail.com
+	name = Hendrik A. Mourão
+	email = jhendrik@gmail.com
 
 [core]
-    autocrlf = input 
-    editor = vim -f
-
-[merge]
-    tool = kdiff3
-    conflictstyle = diff3
+	autocrlf = input 
+	editor = vim -f
 
 [color]
-    branch = auto
-    diff = auto
-    status = auto
+	branch = auto
+	diff = auto
+	status = auto
 
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+	current = yellow reverse
+	local = yellow
+	remote = green
 
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
 
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 
 [alias]
-    ci = commit
-    ck = checkout
-    ckb = checkout -b
-    pullo = pull --ff-only
-    pullr = pull --rebase
-    bc = branch -avv
-    st = status
-    cr = cherry-pick
-    mgnoff = merge --no-ff
-    mgsquash = merge --squash
-    lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit"
-    lg1 = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit" -10
-    lg2 = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit" -20
-    lg5 = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(cyan)(%ar)%C(bold blue)>%Creset' --abbrev-commit" -50
+	ci = commit
+	ck = checkout
+	ckb = checkout -b
+	pullo = pull --ff-only
+	pullr = pull --rebase
+	bc = branch -avv
+	st = status
+	cr = cherry-pick
+	mgnoff = merge --no-ff
+	mgsquash = merge --squash
+	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(cyan)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an %Creset%C(yellow)(%ar)%C(bold blue)>%Creset' --abbrev-commit"
+	lg1 = lg -10
+	lg2 = lg -20
+	lg5 = lg -50
+	stl = "stash list --pretty=format:'%C(cyan)%gd%Cred: %C(yellow)%s'q"
+
+
+[merge]
+	tool = meld
+	conflictstyle = diff3
 
 [mergetool]
-    keepBackup = false
+	prompt = false
+	keepBackup = false
+
+[mergetool "meld"]
+	cmd = meld --auto-merge $LOCAL $BASE $REMOTE --output=$MERGED --diff $BASE $LOCAL --diff $BASE $REMOTE
 
 [mergetool "kdiff3"]
-    cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
+	cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED

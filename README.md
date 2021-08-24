@@ -4,6 +4,7 @@
 - neovim 0.5+
 - curl
 - nvm
+- meld
 
 # WINDOWS
 
