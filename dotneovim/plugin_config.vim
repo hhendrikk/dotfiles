@@ -30,6 +30,16 @@ highlight ALEErrorSign ctermfg=9 ctermbg=15 guifg=#C30500 guibg=#F5F5F5
 highlight ALEWarningSign ctermfg=11 ctermbg=15 guifg=#ED6237 guibg=#F5F5F5
 " }
 
+" restclient config {
+let g:vrc_curl_opts = {
+  \ '-sS': '',
+  \ '--connect-timeout': 10,
+  \ '-i': '',
+  \ '--max-time': 60,
+  \ '-k': '',
+  \}
+" }
+
 " fzf {
 let g:fzf_layout = { 'down': '~60%' }
 " }
@@ -101,8 +111,30 @@ let g:vim_markdown_folding_disabled = 1
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>") 
 " }
 
+" COC-GOLANG {
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+
+autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
+autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
+autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
+" }
+
 " COC {
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-vetur', 'coc-git', 'coc-eslint', 'coc-stylelint', 'coc-highlight', 'coc-go']
+let g:coc_global_extensions = [
+      \ 'coc-emmet',
+      \ 'coc-css',
+      \ 'coc-html',
+      \ 'coc-json',
+      \ 'coc-prettier',
+      \ 'coc-tsserver',
+      \ 'coc-vetur',
+      \ 'coc-git',
+      \ 'coc-eslint',
+      \ 'coc-stylelint',
+      \ 'coc-highlight',
+      \ 'coc-go',
+      \ 'coc-react-refactor'
+      \ ]
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -149,6 +181,9 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+" Mapping commands
+nmap <leader>rc :CocCommand rest-client.request<CR>
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -248,4 +283,4 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-" }
+"}

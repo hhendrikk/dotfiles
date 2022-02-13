@@ -12,7 +12,16 @@
     "go",
     "markdown",
     "json",
-    "jsonc"
+    "jsonc",
+    "restclient"
   ],
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    }
+  }
 }

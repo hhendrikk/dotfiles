@@ -46,7 +46,7 @@
 
 
 [merge]
-	tool = meld
+	tool = kdiff3
 	conflictstyle = diff3
 
 [mergetool]
