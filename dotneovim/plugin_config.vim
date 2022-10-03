@@ -69,7 +69,7 @@ augroup END
 
 " Lightline {
 let g:lightline = {
-      \ 'colorscheme': 'onedark',
+      \ 'colorscheme': 'nightowl',
       \ 'active': {
       \   'right': [
       \     ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok'],

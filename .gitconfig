@@ -58,3 +58,5 @@
 
 [mergetool "kdiff3"]
 	cmd = kdiff3 $BASE $LOCAL $REMOTE -o $MERGED
+[init]
+	defaultBranch = main

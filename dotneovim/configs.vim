@@ -126,15 +126,17 @@
     
     set autoread                                   " Reload files
 
-    colorscheme onedark                            " Colorscheme
+    colorscheme night-owl                          " Colorscheme
     set background=dark
     hi Comment cterm=italic
 
-    set guifont=Monoid\ Nerd\ Font\ Mono:h10
+    set guifont=Iosevka\ Nerd\ Font:h10
 
     if has('termguicolors')
       set termguicolors
     endif
+
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
     if has('patch-8.1.1880')
       set completeopt=longest,menuone,popuphidden

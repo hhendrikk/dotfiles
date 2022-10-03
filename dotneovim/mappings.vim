@@ -12,8 +12,8 @@ command Todo noautocmd vimgrep /TODO\|FIXME/j ** | cw
 " }
 
 " Remap fd do esc {
-inoremap fd <Esc>
-inoremap <Esc> <Nop>
+" inoremap fd <Esc>
+" inoremap <Esc> <Nop>
 " }
 
 " Neovim :Terminal {
